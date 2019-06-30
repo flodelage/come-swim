@@ -1,8 +1,16 @@
 <div class="searchpage-container">
-  <div class="cards">
+  <div class="cards-product">
     <% @swimming_pools.each do |swimming_pool| %>
-      <div class="card">
-
+      <div class="card-product">
+        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
+        <div class="card-product-infos">
+          <div>
+            <h2>Title here</h2>
+            <p>Short description here!</p>
+          </div>
+          <h2 class="card-product-pricing">£99.99</h2>
+          <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-product-user avatar-bordered"/>
+        </div>
       </div>
     <% end %>
   </div>
