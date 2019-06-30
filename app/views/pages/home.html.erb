@@ -1,2 +1,10 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner d-flex justify-content-center">
+  <div class="row d-flex align-items-center">
+    <div class="banner-content d-flex align-items-right">
+      <div class="ml-4">
+        <p>Find a place to park whatever you want has never been that easy.</p>
+      </div>
+    </div>
+    <%= link_to "voir les piscines", swimming_pools_path, {class: "btn btn-primary"} %>
+  </div>
+</div>

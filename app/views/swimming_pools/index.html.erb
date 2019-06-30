@@ -1,0 +1,13 @@
+<div class="searchpage-container">
+  <div class="cards">
+    <% @swimming_pools.each do |swimming_pool| %>
+      <div class="card">
+
+      </div>
+    <% end %>
+  </div>
+  <div id="map"
+  data-markers="<%= @markers.to_json %>"
+  data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
+</div>
