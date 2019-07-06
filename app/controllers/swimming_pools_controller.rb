@@ -2,7 +2,6 @@ class SwimmingPoolsController < ApplicationController
   before_action :find_swimming_pool, only: [:show, :edit, :update, :destroy]
 
   def index
-    @swimming_pools = SwimmingPool.all
     @swimming_pools = SwimmingPool.where.not(latitude: nil, longitude: nil)
 
     @markers = @swimming_pools.map do |swimming_pool|
@@ -15,6 +14,7 @@ class SwimmingPoolsController < ApplicationController
   end
 
   def show
+    @booking = Booking.new
   end
 
   def new

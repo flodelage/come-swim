@@ -1,17 +1,22 @@
 <div class="searchpage-container">
   <div class="cards-product">
     <% @swimming_pools.each do |swimming_pool| %>
-      <div class="card-product">
-        <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/greece.jpg">
-        <div class="card-product-infos">
-          <div>
-            <h2>Title here</h2>
-            <p>Short description here!</p>
+      <%= link_to swimming_pool_path(swimming_pool), :action => 'go' do %>
+        <div class="card-product">
+          <img src="https://images.pexels.com/photos/261045/pexels-photo-261045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <div class="card-product-infos">
+            <div class="card-product-pricing">
+              <h2 class="card-product-price"><%= swimming_pool.price %>€</h2>
+              <span>par personne</span>
+              <span>(la journée)</span>
+            </div>
+            <div class="card-product-title">
+              <h2><%= swimming_pool.name %></h2>
+              <span>proposé par Bernard de Lavillardière</span>
+            </div>
           </div>
-          <h2 class="card-product-pricing">£99.99</h2>
-          <img src='https://kitt.lewagon.com/placeholder/users/krokrob' class="card-product-user avatar-bordered"/>
         </div>
-      </div>
+      <% end %>
     <% end %>
   </div>
   <div id="map"
@@ -19,3 +24,6 @@
   data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 </div>
+
+
+

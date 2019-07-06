@@ -1,0 +1,69 @@
+.page-booking  {
+  background-color: white;
+}
+
+.page-booking img {
+  height: 45vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-product-booking-price {
+  font-size: 40px;
+  color: #07B2FF;
+  font-weight: bold;
+}
+
+.card-product-booking-title h2 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.card-product-booking {
+  margin-bottom: 32px;
+}
+
+.card-product-booking .card-product-booking-infos {
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.card-product-booking-infos .card-product-booking-pricing {
+  margin-right: 32px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.card-product-booking-infos span {
+  font-size: 14px;
+}
+
+.card-product-booking-title {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.booking-swimming-pool-info {
+  padding: 16px;
+}
+
+.booking-swimming-pool-info h3 {
+  color: #949494;
+}
+
+.form-booking {
+  padding: 40px 24px;
+  border-left: solid 1px #d4cfd1;
+  position: sticky;
+  top: 25vh;
+}
+
+.form-booking-title {
+  padding: 0 0 16px 0;
+  display: flex;
+  justify-content: center;
+}

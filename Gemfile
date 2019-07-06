@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 ruby '2.5.3'
 
 gem 'bootsnap', require: false
-gem 'devise'
 gem 'jbuilder', '~> 2.0'
 gem 'pg', '~> 0.21'
 gem 'puma'
@@ -16,8 +15,6 @@ gem 'simple_form'
 gem 'uglifier'
 gem 'webpacker'
 
-gem 'geocoder'
-
 group :development do
   gem 'web-console', '>= 3.3.0'
 end
@@ -30,3 +27,8 @@ group :development, :test do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'dotenv-rails'
 end
+
+# Custom adds
+gem 'devise'
+gem 'geocoder'
+gem 'bootstrap-datepicker-rails', '~> 1.8', '>= 1.8.0.1'

@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :parkings, dependent: :destroy
+  has_many :swimming_pools, dependent: :destroy
   has_many :bookings, dependent: :destroy
 
   # Include default devise modules. Others available are:

@@ -4,12 +4,12 @@
 
 .mapboxgl-popup-content {
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Fira Sans Extra Condensed', sans-serif;
 }
 
 #map {
-  width: 35%;
-  height: 92vh;
+  width: 40%;
+  height: 91vh;
   position: sticky;
-  top: 0;
+  top: 64px;
 }

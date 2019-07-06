@@ -1,6 +1,22 @@
 .banner {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), asset_url("banner.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), asset_url("banner.jpg");
   background-size: cover;
   background-position: center;
   height: 92vh;
+  padding: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.banner-title h1 {
+  color: white;
+  font-size: 4.5rem;
+  font-weight: bold;
+}
+
+.banner-title p {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
