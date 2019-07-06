@@ -3,7 +3,7 @@
     <% @swimming_pools.each do |swimming_pool| %>
       <%= link_to swimming_pool_path(swimming_pool), :action => 'go' do %>
         <div class="card-product">
-          <img src="https://images.pexels.com/photos/261045/pexels-photo-261045.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+          <%= image_tag swimming_pool.picture %>
           <div class="card-product-infos">
             <div class="card-product-pricing">
               <h2 class="card-product-price"><%= swimming_pool.price %>€</h2>
